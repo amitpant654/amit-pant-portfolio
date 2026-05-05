@@ -35,17 +35,6 @@ export default function Portfolio() {
               transition={{ duration: 0.4, delay: (i % 4) * 0.07 }}
               className="group bg-warm-surface border border-warm-sand rounded-2xl p-5 hover:border-warm-amber hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col"
             >
-              <div className="flex flex-wrap gap-1.5 mb-3">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-xs bg-warm-sand text-warm-muted px-2 py-0.5 rounded-full"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
               <h3 className="font-semibold text-warm-text mb-2 group-hover:text-warm-cta transition-colors leading-snug">
                 {project.title}
               </h3>
@@ -54,14 +43,25 @@ export default function Portfolio() {
                 {project.description}
               </p>
 
-              <a
-                href={project.prototypeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 flex items-center gap-1.5 text-warm-cta text-sm font-semibold hover:text-warm-brown transition-colors"
-              >
-                View Prototype <ExternalLink size={13} />
-              </a>
+              <div className="mt-4 flex items-center gap-4">
+                <a
+                  href={project.caseStudyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-warm-cta text-sm font-semibold hover:text-warm-brown transition-colors"
+                >
+                  Case Study <ExternalLink size={12} />
+                </a>
+                <span className="text-warm-sand">|</span>
+                <a
+                  href={project.prototypeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-warm-cta text-sm font-semibold hover:text-warm-brown transition-colors"
+                >
+                  Prototype <ExternalLink size={12} />
+                </a>
+              </div>
             </motion.div>
           ))}
         </div>

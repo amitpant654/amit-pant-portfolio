@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import LinkedinIcon from "./LinkedinIcon";
+import GithubIcon from "./GithubIcon";
 
 const navLinks = [
   { label: "Work", href: "#work" },
@@ -61,6 +62,15 @@ export default function Navbar() {
             className="text-warm-muted hover:text-warm-amber transition-colors"
           >
             <LinkedinIcon size={18} />
+          </a>
+          <a
+            href="https://github.com/amitpant654"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+            className="text-warm-muted hover:text-warm-amber transition-colors"
+          >
+            <GithubIcon size={18} />
           </a>
           <a
             href="https://drive.google.com/file/d/1KAXJD_nzs-TiT-MSzkSn5EH9TncZByQw/view?usp=sharing"
