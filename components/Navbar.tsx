@@ -8,6 +8,7 @@ import GithubIcon from "./GithubIcon";
 const navLinks = [
   { label: "Work", href: "#work" },
   { label: "Portfolio", href: "#portfolio" },
+  { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
 ];
 
