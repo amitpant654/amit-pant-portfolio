@@ -48,28 +48,4 @@ export const projects: Project[] = [
     prototypeUrl: "https://android-dw-bodycheck.lovable.app/",
     tags: ["Retention", "UX"],
   },
-  {
-    id: 6,
-    title: "Project Title Six",
-    description: "Built a new product vertical from scratch — defining the problem space, MVP scope, and go-to-market strategy.",
-    caseStudyUrl: "#",
-    prototypeUrl: "#",
-    tags: ["0→1", "Strategy"],
-  },
-  {
-    id: 7,
-    title: "Project Title Seven",
-    description: "Data-driven optimisation of a key conversion funnel, leading to significant uplift in activation and revenue.",
-    caseStudyUrl: "#",
-    prototypeUrl: "#",
-    tags: ["Growth", "Analytics"],
-  },
-  {
-    id: 8,
-    title: "Project Title Eight",
-    description: "Cross-functional collaboration to ship an enterprise feature on time, meeting complex compliance and UX requirements.",
-    caseStudyUrl: "#",
-    prototypeUrl: "#",
-    tags: ["Enterprise", "B2B"],
-  },
 ];
